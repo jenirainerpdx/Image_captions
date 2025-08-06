@@ -1,0 +1,6 @@
+langchain==0.3.7
+gradio==5.23.2
+transformers==4.52.1
+bs4==0.0.2
+requests==2.32.4
+torch
