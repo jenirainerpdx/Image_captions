@@ -4,7 +4,7 @@ from PIL import Image
 from transformers import AutoProcessor, BlipForConditionalGeneration
 
 processor = AutoProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
-model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
+model: BlipForConditionalGeneration = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
 
 def caption_image(input_image: np.ndarray):
     # Convert numpy array to PIL Image and convert to RGB
@@ -21,4 +21,4 @@ iface = gr.Interface(
     title="Image Captioning",
     description="This is a simple web app for generating captions for images using a trained model."
 )
-iface.launch(server_name="0.0.0.0", server_port= 8000, share=True)
+iface.launch(server_name="0.0.0.0", server_port= 7860, share=True)

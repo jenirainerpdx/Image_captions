@@ -1,6 +1,8 @@
-langchain==0.3.7
-gradio==5.23.2
-transformers==4.52.1
+pillow
+numpy==2.3.2
+langchain==0.3.27
+gradio==5.41.1
+transformers==4.55.0
 bs4==0.0.2
 requests==2.32.4
 torch
